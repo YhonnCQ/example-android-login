@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".GetStartedActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineTop"
@@ -38,7 +38,7 @@
         android:id="@+id/ivlogo"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:src="@drawable/ic_wellcome"
+        android:src="@drawable/ic_welcome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/guidelineTop" />
@@ -57,20 +57,21 @@
     <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="welcome to this app please sign in to continue."
+        android:text="welcome to this app please log in to continue."
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
         app:layout_constraintTop_toBottomOf="@id/tvHi" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGetStarted"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/box_button"
+        android:text="Get Started"
         android:textColor="@color/white"
-        android:background="@drawable/box_log_in"
-        android:text="Log In"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineBottom"
         app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
-        app:layout_constraintStart_toStartOf="@id/guidelineStart"
-        app:layout_constraintBottom_toBottomOf="@id/guidelineBottom"/>
+        app:layout_constraintStart_toStartOf="@id/guidelineStart" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
